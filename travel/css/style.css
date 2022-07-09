@@ -37,6 +37,7 @@ button, input {
 
 button {
   display: block;
+  background-color: transparent;
 }
 
 /*++++++++++++++++++ fonts ++++++++++++++++++++++++*/
@@ -182,7 +183,7 @@ flex-wrap: wrap;
 
       /*++++++++++++++++++ header ++++++++++++++++++++++++*/
 
-.burger_menu {
+.burger{
   display: none;
 }
 
@@ -597,11 +598,47 @@ display: none;
     justify-content: space-between;
   }
 
-.burger_menu {
+.burger {
+  display: block;
+}
+
+.burger_icon {
   display: block;
   width: 35px;
   margin-left: auto;
 }
+
+.burger_menu {
+  position: relative;
+  width: 165px;
+  padding-left: 44px;
+  padding-top: 44px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  background-color:#f2785c;
+  border-radius: 10px;
+}
+
+.menu_link:hover {
+  text-decoration: underline;
+}
+
+.menu_item {
+  padding-bottom: 10px;
+  text-align: end;
+}
+
+.close_menu {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../img/close.svg);}
 
   .stories {
     border-bottom-left-radius: 30px ;
@@ -846,7 +883,6 @@ text-align: end;
   height: 130px;
   margin-right: 10px;
   border:none;
-
 }
 
 .img1{
