@@ -15,46 +15,43 @@
 
 <body>
   <header class="header">
-    <div class="container flex">
+    <div class="container flex toggle-flex">
+
       <div class="logo flex">
         <img class="logo_img" src="./img/logo.svg" alt="logo Travel Portal">
         <p class="logo_txt">Travel Portal</p>
-        
-        <button type="button" class="burger">
-          <img class="burger_icon" src="./img/burger_menu.svg" alt="burger_menu">
-        </button>
-       </div>
-
-
-       <div class="burger_menu">
-        <button class="close_menu" type="button"></button>
-        <ul>
-          <li class="menu_item"><a class="menu_link" href="">How It Works</a></li>
-          <li class="menu_item"><a class="menu_link" href="">Destinations</a></li>
-          <li class="menu_item"><a class="menu_link" href="">Plan Your Trip</a></li>
-          <li class="menu_item"><a class="menu_link" href="">Travel Stories</a></li>
-          <li class="menu_item"><a class="menu_link" href="">Account</a></li>
-          <li class="menu_item"><a class="menu_link" href="">Social Media</a></li>
-        </ul>
       </div>
-  
+
+
+
+       <label for="toggle" class="toggle-menu">
+        <span class="toggle-icon"></span>
+    </label>
+    <input type="checkbox" id="toggle">
+         
       <nav class="nav">
+        <!-- <button class="close_menu" type="button"></button> -->
+
         <ul class="flex">
           <li><a class="nav_link" href="#start_txt">How It Works</a></li>
-          <li><a class="nav_link"  href="#steps">Plan Your Trip</a></li>
-          <li><a class="nav_link"  href="#destination">Destinations</a></li>
-          <li><a class="nav_link"  href="#stories">Travel Stories</a></li>
+          <li><a class="nav_link"  href="#step">Plan Your Trip</a></li>
+          <li><a class="nav_link"  href="#destinations">Destinations</a></li>
+          <li><a class="nav_link"  href="#storie">Travel Stories</a></li>
+          <li class=" menu-item-toggle"><a class="nav_link" href="#">Account</a></li>
+          <li class="menu-item-toggle"><a class="nav_link" href="#sotials">Social Media</a></li>
         </ul>
       </nav>
+
       <button class="btn btn-login" type="button">Login</button>
     </div>
+
 
     <section class="preview">
       <div class="container">
          <h1 class="h1">Explore the beauty of the World</h1>
         <p class="subtitle">Receive personalized recommendations for countries, hotels, activities and more</p>
         <div class="start flex">
-          <p class="start_txt" id="start_txt">What would you like to do?</p>
+          <p class="start_text" id="start_txt">What would you like to do?</p>
           <button class="btn start-btn">Start Planning</button>
         </div>
       </div>
@@ -65,7 +62,7 @@
 <main class="main">
  
 
-  <section class="steps" id="steps">
+  <section class="steps" id="step">
     <div class="container">
       <h2 class="h2">3 Steps to the perfect trip</h2>
 
@@ -89,7 +86,7 @@
     </div>
   </section>
 
-  <section class="destination" id="destination">
+  <section class="destination" id="destinations">
     <div class="container">
     <h2 class="h2">Popular destinations</h2>
 
@@ -136,7 +133,7 @@
 
 
 
-  <section class="stories" id="stories">
+  <section class="stories" id="storie">
     <h2 class="h2">Travel stories</h2>
 
     <div class="container">
@@ -216,7 +213,7 @@
   <footer class="footer">
     <div class="container flex">
       <p class="copyright">All Rights Reserved © Travel Portal</p>
-        <ul class="social flex">
+        <ul class="social flex" id="sotials">
           <li><a class="social-inst" href="https://rs.school/js-stage0/"  target="_blank"></a></li>
           <li><a class="social-you" href="https://github.com/Vicctorya"  target="_blank"></a></li>
           <li><a class="social-twit" href="#"></a></li>
