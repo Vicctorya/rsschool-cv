@@ -879,6 +879,7 @@ text-align: end;
 }
 
 .capt {
+  display: block;
   top: 15px;
   right: 15px;
 
@@ -990,3 +991,5 @@ column-gap:20px;
 
 
 }
+
+
