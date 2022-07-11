@@ -11,31 +11,47 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 </head>
 
+
+
 <body>
   <header class="header">
-    <div class="container flex">
+    <div class="container flex toggle-flex">
+
       <div class="logo flex">
         <img class="logo_img" src="./img/logo.svg" alt="logo Travel Portal">
         <p class="logo_txt">Travel Portal</p>
       </div>
-  
+
+
+
+       <label for="toggle" class="toggle-menu">
+        <span class="toggle-icon"></span>
+    </label>
+    <input type="checkbox" id="toggle">
+         
       <nav class="nav">
+        <!-- <button class="close_menu" type="button"></button> -->
+
         <ul class="flex">
           <li><a class="nav_link" href="#start_txt">How It Works</a></li>
-          <li><a class="nav_link"  href="#steps">Plan Your Trip</a></li>
-          <li><a class="nav_link"  href="#destination">Destinations</a></li>
-          <li><a class="nav_link"  href="#stories">Travel Stories</a></li>
+          <li><a class="nav_link"  href="#step">Plan Your Trip</a></li>
+          <li><a class="nav_link"  href="#destinations">Destinations</a></li>
+          <li><a class="nav_link"  href="#storie">Travel Stories</a></li>
+          <li class=" menu-item-toggle"><a class="nav_link" href="#">Account</a></li>
+          <li class="menu-item-toggle"><a class="nav_link" href="#sotials">Social Media</a></li>
         </ul>
       </nav>
+
       <button class="btn btn-login" type="button">Login</button>
     </div>
+
 
     <section class="preview">
       <div class="container">
          <h1 class="h1">Explore the beauty of the World</h1>
         <p class="subtitle">Receive personalized recommendations for countries, hotels, activities and more</p>
         <div class="start flex">
-          <p class="start_txt" id="start_txt">What would you like to do?</p>
+          <p class="start_text" id="start_txt">What would you like to do?</p>
           <button class="btn start-btn">Start Planning</button>
         </div>
       </div>
@@ -46,23 +62,23 @@
 <main class="main">
  
 
-  <section class="steps" id="steps">
+  <section class="steps" id="step">
     <div class="container">
       <h2 class="h2">3 Steps to the perfect trip</h2>
 
      <div class="steps flex">
-      <div class="steps-item flex">
-        <img class="step-img" src="./img/icon1.svg" alt="">
+      <div class="steps-item item1 flex">
+        <img class="step-img icon1" src="./img/icon1.svg" alt="icon">
         <p>Tell us what you want to do</p>
       </div>
 
-      <div class="steps-item flex">
-        <img class="step-img" src="./img/icon2.svg" alt="">
+      <div class="steps-item item2 flex">
+        <img class="step-img icon2" src="./img/icon2.svg" alt="icon">
         <p>Share us preferable dates </p>
       </div>
 
-      <div class="steps-item flex">
-        <img class="step-img" src="./img/icon3.svg" alt="">
+      <div class="steps-item item3 flex">
+        <img class="step-img icon3" src="./img/icon3.svg" alt="icon">
         <p>We will give you recommendations</p>
       </div>
 
@@ -70,25 +86,36 @@
     </div>
   </section>
 
-  <section class="destination" id="destination">
+  <section class="destination" id="destinations">
     <div class="container">
     <h2 class="h2">Popular destinations</h2>
 
     <div class="slider flex">
-      <figure class="slider-figure">
-        <img class="slider-img" src="./img/rectangle23.jpg" alt="Spain">
-        <figcaption class="capt">Spain</figcaption>
-      </figure>
 
-      <figure class="slider-figure">
-        <img class="slider-img" src="./img/rectangle24.jpg" alt="Japan">
-        <figcaption class="capt">Japan</figcaption>
-      </figure>
+      <div class="slider-figure">
+        <div class="slider-img img-spain" >
+          <span class="capt">Spain</span>
+        </div>
+      </div>
 
-      <figure class="slider-figure">
-        <img class="slider-img" src="./img/rectangle25.jpg" alt="USA">
-        <figcaption class="capt">USA</figcaption>
-      </figure>
+      <div class="slider-figure">
+        <div class="slider-img img-japan" >
+          <span class="capt">Japan</span>
+        </div>
+      </div>
+
+      <div class="slider-figure">
+        <div class="slider-img img-usa" >
+          <span class="capt">USA</span>
+        </div>
+      </div>
+
+      <div class="slider-arr flex">
+        <div class="arr-left"></div>
+        <div class="arr-right"></div>
+      </div>
+
+
     </div>
 
     <div class="points">
@@ -96,10 +123,10 @@
         <li class="point"></li>
         <li class="point"></li>
         <li class="point"></li>
-
       </ul>
     </div>
 
+       
     <button class="btn find-btn" type="button">Find&nbsp;More</button>
     </div>
   </section>
@@ -107,16 +134,16 @@
 
 
 
-  <section class="stories" id="stories">
+  <section class="stories" id="storie">
     <h2 class="h2">Travel stories</h2>
 
     <div class="container">
 
-      <div class="wrap flex">
-          <img class="stories-img" src="./img/rectangle29.jpg" alt="Attractive Thailand">
+      <div class="wrap flex"> 
+          <div class="stories-img img1"></div>
           <div class="signature">
             <h3 class="h3">10 Photos of Attractive Thailand</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            <p class="basicText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                laboris nisi ut aliquip ex ea commodo consequat. 
@@ -125,16 +152,16 @@
                cupidatat non proident, sunt in culpa qui officia deserunt 
                mollit anim id est laborum.Lorem ipsum dolor sit amet, 
                consectetur adipiscing elite
-              <span >... Read More</span>
             </p>
+            <a href="#" class="readMore">... Read More</a>
           </div>
       </div>
   
           <div class="wrap flex">
-            <img class="stories-img"  src="./img/rectangle30.jpg" alt="Canyonlands National Park">
+            <div class="stories-img img2" ></div>
             <div class="signature">
               <h3 class="h3">Canyonlands National Park, Utah</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              <p class="basicText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
@@ -142,16 +169,16 @@
                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit
-                   <span>... Read More</span>
                   </p>
-            </div>
+                  <a href="#" class="readMore">... Read More</a>
+                </div>
           </div>  
   
             <div class="wrap flex">
-              <img class="stories-img"  src="./img/rectangle31.jpg" alt="Mountains">
+              <div class="stories-img img3" ></div>
               <div class="signature">
                 <h3 class="h3">I left my heart in the Mountains!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                <p class="basicText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
@@ -159,16 +186,16 @@
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
                   officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, 
                   consectetur adipiscing elit
-                  <span>... Read More</span>
                 </p>
+                <a href="#" class="readMore">... Read More</a>
               </div>
             </div>  
   
               <div class="wrap flex">
-                <img class="stories-img" src="./img/rectangle32.jpg" alt="Longest journey">
+                <div class="stories-img img4"></div>
                 <div class="signature">
                   <h3 class="h3">The Longest journey in my life!</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  <p class="basicText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -176,8 +203,8 @@
                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
                      officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, 
                      consectetur adipiscing elit
-                    <span>... Read More</span>
                   </p>
+                  <a href="#" class="readMore">... Read More</a>
                 </div>
               </div>  
   
@@ -186,14 +213,11 @@
 
   <footer class="footer">
     <div class="container flex">
-      <a class="footer-link" href="https://rs.school/js-stage0/"  target="_blank">
-        <img class="link-img" src="./img/rs_school_js.svg" alt="js-stage0"></a>
-      <a class="footer-link" href="https://github.com/Vicctorya"  target="_blank">https://github.com/Vicctorya</a>
       <p class="copyright">All Rights Reserved © Travel Portal</p>
-        <ul class="sotial flex">
-          <li><a class="social-inst" href=""></a></li>
-          <li><a class="social-you" href=""></a></li>
-          <li><a class="social-twit" href=""></a></li>
+        <ul class="social flex" id="sotials">
+          <li><a class="social-inst" href="https://rs.school/js-stage0/"  target="_blank"></a></li>
+          <li><a class="social-you" href="https://github.com/Vicctorya"  target="_blank"></a></li>
+          <li><a class="social-twit" href="#"></a></li>
         </ul>
 
     </div>
