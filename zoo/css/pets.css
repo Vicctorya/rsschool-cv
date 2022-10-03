@@ -1,0 +1,113 @@
+.pets__container {
+
+background-repeat: no-repeat ;
+background-image: url(../img/palm_foto.png),
+									 url(../img/strelitzia1.png) ;
+background-position: -82% bottom, right bottom;
+padding-bottom: 100px;
+
+}
+
+.pets__card {
+	width: 366px;
+	border: 1px solid #FA6F32;
+	border-radius: 5px;
+	}
+
+.pets__cards {
+	position: relative;
+	max-width: 1160px;
+
+	display: flex;
+	gap: 20px 30px;
+	flex-wrap: wrap;
+
+	/* margin-bottom: 80px; */
+}
+
+.pets__card_img {
+	width: 366px;
+height: 366px;
+}
+
+.pets__features {
+	margin: 2px 12px 14px 16px;
+	/* border: 1px solid blueviolet; */
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.pets__name {
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.pets__native {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 103%;
+	color: #000000;
+}
+
+.pets__btn {
+	display: block;
+	margin: 0 auto;
+}
+
+.media_1000 {
+	display: none;
+}
+
+@media (max-width: 1000px) {
+
+	.pets__container {
+		padding-bottom: 140px;
+		background-size: 35%, 25%;
+		background-position: -35% bottom, right bottom;
+
+				}
+
+	.pets__card {
+		width: 291px;
+	}
+	
+	.pets__cards {
+		max-width: 941px;
+			gap: 92px 20px;
+	}
+
+	.pets__card_img {
+		width: 289px;
+	height: 289px;
+	transition: transform 0.25s;
+
+	}
+
+	.pets__card_img:hover {
+		transform: scale(1.1);
+	}
+
+	.media_1160 {
+		display: none;
+		
+	}
+
+	.media_1000 {
+		position: absolute;
+		top: 364px;
+left: 310px;
+display: flex;
+justify-content: center;
+gap: 171px;
+	}
+}
+
+@media (max-width: 640px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}
