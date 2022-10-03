@@ -1,0 +1,136 @@
+.testimonials {
+	background-image: url(../img/leav_foto.png);
+	background-repeat:  no-repeat;
+	background-position: right 644px;
+}
+
+
+.testimonials__container {
+	padding-top: 140px;
+	padding-bottom: 180px;
+}
+
+.testimonials_h3 {
+padding-bottom: 47px;	
+}
+
+.testimonials__wrapper {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 21px;
+}
+
+.testimonials__card {
+width: 268px;
+height: 391px;
+padding:15px 15px 19px 16px;
+
+/* overflow: hidden;
+	text-overflow: ellipsis; */
+
+	
+
+background-color: #F1F3F2;
+border: 1px solid orange;
+border-radius: 20px;
+}
+
+.card__ava {
+	display: flex;
+	gap: 10px;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+
+.card__ava_img {
+	width: 37px;
+	height: 37px;
+	border-radius: 50% ;
+}
+
+.ava__name {
+	color: #000000;
+	line-height: 108%;
+}
+
+.ava__local, .ava__day {
+	color: #BDBDBD;
+	line-height: 120%;
+}
+
+.ava__txt {
+	color: #767474;
+	line-height: 120%;
+
+
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 17;
+	overflow: hidden;
+}
+
+.testimonials__progress {
+	margin: 0 auto;
+	width: 599px;
+	height: 8px;
+	margin-bottom: 30px;
+
+	background-color: #F5F7F6;
+	border:1px solid #FE9013;
+	border-radius: 5px;
+}
+	
+.progress__bar {
+width: 20%;
+height: 100%;
+
+	background-color: #FE9013;
+	border:1px solid #FE9013;
+
+	border-radius: 5px;
+
+
+}
+
+/* ::-moz-progress-bar {
+  background-color: #FE9013;
+	border:1px solid #FE9013;
+	border-radius: 5px;
+} */
+
+
+
+
+@media (max-width: 1000px) {
+	.testimonials__container {
+		padding-top: 100px;
+		padding-bottom: 140px;
+	}
+
+	.testimonials_h3 {
+		padding-bottom: 30px;	
+		}
+
+	.testimonials__card {
+		width: 293px;
+		padding:15px 22px 19px 16px;
+}
+.card__media_1000 {
+	display: none;
+}
+
+.testimonials__progress {
+		width: 390px;
+	margin-bottom: 52px;
+}
+}
+
+@media (max-width: 640px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}
+
+
