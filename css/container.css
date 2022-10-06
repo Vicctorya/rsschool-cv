@@ -1,0 +1,42 @@
+.container {
+max-width: 1160px;
+	margin: 0 auto;	
+/* border: 1px solid red; */
+}
+
+section, header, footer {
+	/* border: 1px solid green; */
+	max-width: 1600px;
+	margin: 0 auto;	
+
+}
+
+@media (max-width: 1000px) {
+	.container {
+		max-width: 940px;
+	}
+
+	section, header, footer {
+		max-width: 1000px;
+	}
+}
+
+@media (max-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+
+	section, header, footer {
+		max-width: 640px;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		max-width: 320px;
+	}
+
+	section, header, footer {
+		max-width: 320px;
+	}
+}

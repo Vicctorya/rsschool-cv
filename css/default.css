@@ -1,0 +1,49 @@
+html {
+	box-sizing: border-box ;
+
+}
+
+body {
+	margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.hidden {
+display: none;}
+
+/* img,
+svg {
+	
+	max-width: 100%;
+	height: auto; 
+		max-height: 100%;
+} */
+
+button {
+padding: 0;
+cursor: pointer;
+background-color: transparent;
+border: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+
