@@ -1,0 +1,150 @@
+.amout__txt {
+	padding-bottom: 16px;
+}
+
+.amout__block {
+	position: relative;
+	width: 976px;
+	height: 27px;
+
+background: #404950;
+border-radius: 2px;
+
+margin-bottom: 12px;
+}
+
+.amout__line {
+	position: absolute;
+
+	width: 915px;
+height: 2px;
+left: 31px;
+top: 50%;
+background: #72828E;
+}
+
+.amout__wrapp {
+	
+	position: absolute;
+	top: -5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.amout__round {
+	
+	width: 10px;
+height: 10px;
+margin-right: 120px;
+border-radius: 50%;
+	background: #FFEE2E;
+}
+
+.amout__round_1000 {
+	position: relative;
+
+}
+
+.amout__round_1000::before {
+	position: absolute;
+top: -7px;
+left: -7px;
+	display: block;
+content: "";
+	width: 22.95px;
+	height: 22.95px;
+	border: 2px solid #FE9013;
+	border-radius: 50%;
+}
+
+.amout__round_1000::after {
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	display: block;
+content: "";
+	width: 40px;
+	height: 40px;
+	border: 2px solid #FE9013;
+	border-radius: 50%;
+}
+
+.amout__prices {
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+
+.amout__price {
+font-weight: 500;
+font-size: 26px;
+line-height: 140%;
+text-transform: uppercase;
+color: #333B41;
+}
+
+.amout__price_1000 {
+	color: #FE9013;
+}
+
+.amout__form {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 268px;
+height: 54px;
+	border: 1px solid #929699;
+border-radius: 2px;
+padding:16px 9px;
+}
+
+.amout__label {
+	display: inline-block;
+	color: #929699;
+	
+}
+
+.amout__inpit {
+	display: inline-block;
+width: 100px;
+margin-left: 15px;
+background: none;
+border: none;
+outline: none;
+text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.amout__radio_wrapp {
+	width: 268px;
+
+	margin: 0 auto;
+	/* border: 1px solid red; */
+	margin-bottom: 30px;
+}
+
+.amout__radio {
+	display: inline-block;
+/* position: absolute;
+padding-left: 30px; */
+}
+
+.amout__radio::before {
+	display: block;
+	content: "";
+	width: 16px;
+height: 16px;
+left: 0px;
+top: 2px;
+
+border: 1px solid #FE9013;
+}

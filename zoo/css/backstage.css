@@ -1,0 +1,55 @@
+.backstage {
+	background-image: url(../img/flower_foto1.png) ;
+	background-repeat: no-repeat ;
+	background-position: right 12px ;
+}
+
+.backstage__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 87px;
+	padding-top: 140px;
+	padding-bottom: 176px;
+}
+
+.backstage_h2 {
+padding-bottom: 20px;	
+}
+
+.backstage_min {
+	line-height: 130%;
+	padding-bottom: 54px;
+}
+
+.backstage_subtitle {
+	padding-bottom: 34px;
+}
+
+@media (max-width: 1000px) {
+	.backstage__container {
+		align-items: center;
+
+		gap: 31px;
+		padding-top: 100px;
+		padding-bottom: 142px;
+	}
+
+	.backstage__img {
+		width: 455px;
+height: 377px; /* ? фото не пропорциональное;?*/
+	}
+
+	.backstage {
+		background-image: none ;
+		
+	}
+}
+
+@media (max-width: 640px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}
